@@ -14,12 +14,16 @@ describe Airport do
   describe '#take_off' do
     it 'instruct plane to take off 'do
       plane = Plane.new
-      expect()
+      plane.landing(plane)
+      expect((plane.landing(plane)).take_off(plane)) to delete(plane)
+      #expect(plane).to respond_to (:take_off(plane))
+
+
     end
   end
 
 end
 
 
-#so lost on how to start.
-#don't know where to start
+
+#don't know where to start on spec test
